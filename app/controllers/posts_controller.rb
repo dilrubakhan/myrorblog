@@ -1,8 +1,7 @@
 class PostsController < ApplicationController
 
 	def index
-		@firstContent = "One of the reasons that bad boys are so attractive in the first place is that they exude magnetic confidence."
-		@secondContent = "Sometimes when we court relationships with a lot of conflict because conflict is distracting. "
+		@posts = Post.all
 	end
 
 	def new
@@ -21,7 +20,7 @@ class PostsController < ApplicationController
 	
 	end
 	def show
-	
+		@post = Post.find(params[:id])
 	end
 	def destroy
 	
