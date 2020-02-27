@@ -4,3 +4,4 @@
 <small><%= @post.created_at.strftime("%b %d, %y")%></small>
 <p><%= @post.body%></p>
 
+<%= link_to "Edit Post", edit_post_path %> |  <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
