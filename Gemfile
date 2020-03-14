@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'activeadmin'
 # Plus integrations with:
 gem 'devise'
+gem 'coffee-rails'
 
 
 group :development, :test do
